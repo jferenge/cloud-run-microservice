@@ -23,5 +23,5 @@ func (a *App) Handler(w http.ResponseWriter, r *http.Request) {
 	a.log.WithRequest(r).
 		WithLabels(map[string]string{"arbitraryField": "custom entry"}).
 		Infof("Structured logging example.")
-	fmt.Fprintf(w, "Hello World!\n")
+	fmt.Fprintf(w, "Hell World!\n")
 }
